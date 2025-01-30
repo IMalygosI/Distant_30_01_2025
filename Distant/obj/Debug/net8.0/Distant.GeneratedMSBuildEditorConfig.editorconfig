@@ -32,5 +32,11 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/dimau/source/repos/Distant/Distant/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/dimau/source/repos/Distant/Distant/Error.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/dimau/source/repos/Distant/Distant/GlavnOkko.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/dimau/source/repos/Distant/Distant/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

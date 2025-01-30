@@ -3,9 +3,99 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:CompileBindings="False"
         x:Class="Distant.MainWindow"
-        Title="Distant">
+        Title="Авторизация">
 	
-	
-	
+	<Border BorderThickness="3"
+			BorderBrush="#3e92d2">
+		
+		<Grid ShowGridLines="False"
+			  ColumnDefinitions="*,*,*"
+			  RowDefinitions="*,*,*">
+			
+			<Border BorderThickness="3"
+					BorderBrush="#3e92d2"
+					Grid.Column="1"
+					Grid.Row="1"
+					Width="350"
+					Height="350"
+					CornerRadius="20"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center">
+				<StackPanel HorizontalAlignment="Center"
+							VerticalAlignment="Center">
+
+					<TextBlock Text=""
+							   FontSize="25"
+							   TextDecorations="Strikethrough"
+							   IsVisible="False"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Foreground="Red"
+							   Name="CapchaTextBlock"/>
+
+					<TextBox Watermark="Капча:"
+							 CornerRadius="10"
+							 BorderBrush="Gray"
+							 BorderThickness="2"
+							 IsVisible="False"
+							 Width="250"
+							 Height="32"
+							 Margin="0 5 0 0"
+							 Name="CapchaTextBox"/>
+					
+					<TextBox Watermark="Логин:"
+						 CornerRadius="10"
+						 BorderBrush="Gray"
+						 BorderThickness="2"
+						 Width="250"
+						 Height="32"
+						 Margin="0 0 0 5"
+						 Name="login"/>
+
+					<DockPanel>
+
+						<TextBox Watermark="Пароль:"
+								 CornerRadius="10"
+								 BorderBrush="Gray"
+								 PasswordChar="*"
+								 BorderThickness="2"
+								 Width="250"
+								 Height="32"
+								 Margin="42 0 0 0"
+								 Name="password"/>
+
+						<Button Click="togglePassword"
+								Width="42"
+								Height="42"
+								Background="White"
+								VerticalAlignment="Center"
+								HorizontalAlignment="Right">
+							<Image Source="avares://Distant/Assets/password.png"/>
+						</Button>
+
+					</DockPanel>
+
+					<Button HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							CornerRadius="10"
+							Background="#0a60a3"
+							BorderBrush="Gray"
+							BorderThickness="2"
+							Name="Entrance"
+							Click="Button_Click_Entrance"
+							Width="250"
+							Height="32"
+							Margin="0 5 0 0">
+						<TextBlock Text="Войти"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"
+								   Foreground="White"/>
+						
+					</Button>
+				</StackPanel>
+			</Border>
+		</Grid>
+	</Border>
 </Window>

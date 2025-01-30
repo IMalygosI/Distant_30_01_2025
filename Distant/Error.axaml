@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		MaxHeight="450" MaxWidth="800"
+		MinHeight="450" MinWidth="800"
+		x:CompileBindings="False"
+        x:Class="Distant.Error"
+        Title="Ошибка!">
+	
+	<Border BorderThickness="3"
+			BorderBrush="#3e92d2">
+
+		<Grid ShowGridLines="False"
+			  ColumnDefinitions="*,*,*"
+			  RowDefinitions="*,*,*">
+
+			<StackPanel HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Grid.ColumnSpan="3"
+						Grid.Row="1">
+
+				<TextBlock Text="Ошибка!"
+						   Name="warning"
+						   Foreground="Red"
+						   FontWeight="Bold"
+						   TextWrapping="Wrap"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+				
+				<Button HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						CornerRadius="10"
+						Background="#0a60a3"
+						BorderBrush="Gray"
+						BorderThickness="2"
+						FontWeight="Bold"
+						Click="Button_Click_Out"
+						Width="250"
+						Height="32"
+						Margin="0 70 0 0">
+					<TextBlock Text="Закрыть"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Foreground="White"/>
+
+				</Button>
+				
+			</StackPanel>
+			
+		</Grid>
+	</Border>
+</Window>
